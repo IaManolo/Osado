@@ -1,0 +1,162 @@
+.boton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.boton {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para las categorías */
+.categoria-boton {
+    width: 220px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background: var(--color-categoria, #007bff);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.categoria-boton:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de eliminación y edición */
+.delete-btn, .edit-btn {
+    position: absolute;
+    top: 5px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-btn { right: 5px; background: red; color: white; }
+.edit-btn { left: 5px; background: orange; color: white; }
+
+/* Estilo del botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.json-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Asegura que los iconos de las categorías y botones se vean bien */
+.boton i, .categoria-boton i {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+
+.volver-container {
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: white;
+    border-top: 2px solid #ddd;
+}
+
+.volver-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+
+/* Centrar el título de la categoría */
+.categoria-titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Mejorar alineación del texto dentro de los botones */
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.boton-texto {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Contenedor para centrar el título de la categoría */
+.categoria-titulo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del título */
+.categoria-titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
